@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_ENDPOINT = process.env === 'production' ? '' : 'http://localhost:3000';
+const API_ENDPOINT = process.env === 'production' ?
+  'https://nyani-batch-translate-all-api.now.sh' : 'http://localhost:3000';
 
 export default function getTranslations(text) {
   const endpoint = `${API_ENDPOINT}/translate`;

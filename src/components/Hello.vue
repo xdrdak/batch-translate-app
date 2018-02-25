@@ -55,6 +55,7 @@ export default {
   methods: {
     translate() {
       const text = this.text;
+      this.errorMessage = '';
       if (text) {
         this.loading = true;
         getTranslations(text)
